@@ -8,7 +8,7 @@
           </div>
       </div>
       <div class="section__text-box">
-        <h2 class="section__text--heading">{{heading}}</h2>
+        <h2 class="section__text--heading"><a :href="link" target="_blank">{{heading}}</a></h2>
         <div tooltip="HTML5" tooltip-position="bottom" class="tooltip--html"><i v-if="html" class="devicon-html5-plain colored section__icon--html"></i></div>
         <div tooltip="CSS3" tooltip-position="bottom" class="tooltip--css"><i v-if="css" class="devicon-css3-plain colored section__icon--css"></i></div>
         <div tooltip="Javascript" tooltip-position="bottom" class="tooltip--js"><i v-if="js" class="devicon-javascript-plain colored section__icon--js"></i></div>
@@ -129,39 +129,6 @@ export default {
 [tooltip]:hover::after,[tooltip]:hover::before {
    opacity:1
 }
-
-// .tooltip::after {
-//     &--html {
-//         background: var(--red);
-//     }
-//     &--css {
-//         background: var(--blue-light);
-//     }
-//     &--js {
-//         background: var(--yellow);
-//     }
-//     &--bootstrap {
-//         background: var(--purple);
-//     }
-//     &--wordpress {
-//         background: var(--grey-dark);
-//     }
-//     &--google {
-//         background: var(--blue);
-//     }
-//     &--sass {
-//         background: #cc6699;
-//     }
-//     &--vuejs {
-//         background: #42b883;
-//     }
-//     &--webpack {
-//         background: #1d78c1
-//     }
-//     &--babel {
-//         background: #fed330;
-//     }
-// }
 
 @mixin bp-phone {
     @media only screen and (max-width: 599px) {
@@ -315,6 +282,13 @@ export default {
             font-size: 6vmin;
             @include uppercase;
             margin-bottom: 1rem;
+            & a {
+                color: var(--black);
+                transition: .5s all;
+                &:hover {
+                color: var(--primary);
+                }
+            }
             @include bp-phone {
                 font-size: 8vmin;
             }
