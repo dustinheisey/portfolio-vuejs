@@ -18,7 +18,9 @@
     <div class="section__img-box">
         <div class="section__img-box--outer">
             <a :href="link" target="_blank" class="section__img-box--inner">
+              <div class="section__img-box--img">
                 <img :src="src" :alt="heading" class="section__img">
+              </div>
             </a>
         </div>
     </div>
@@ -238,10 +240,10 @@ export default {
         background-color: var(--white);
     }
     &__img {
-        height: 90%;
-        width: 90%;
+        height: 85%;
+        width: 85%;
         background-color: var(--white);
-        border: 2rem solid var(--primary);
+        @include unslant;
         grid-area: img;
         &-box {
             @include center;
@@ -267,6 +269,13 @@ export default {
                 height: 90%;
                 width: 90%;
                 background-color: var(--grey-light);
+            }
+            &--img {
+                @include center;
+                height: 90%;
+                width: 90%;
+                border: 2rem solid var(--primary);
+                background-color: var(--white);
             }
         }
     }
