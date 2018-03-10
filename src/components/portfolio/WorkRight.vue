@@ -244,6 +244,7 @@ export default {
         width: 85%;
         background-color: var(--white);
         @include unslant;
+        transition: 1s all;
         grid-area: img;
         &-box {
             @include center;
@@ -276,6 +277,7 @@ export default {
                 width: 90%;
                 border: 2rem solid var(--primary);
                 background-color: var(--white);
+                transition: 1s all;
             }
         }
     }
@@ -293,6 +295,7 @@ export default {
             font-size: 6vmin;
             @include uppercase;
             margin-bottom: 1rem;
+            letter-spacing: .3rem;
             & a {
                 color: var(--black);
                 transition: .5s all;

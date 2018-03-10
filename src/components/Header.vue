@@ -29,8 +29,8 @@
 export default {
   data () {
     return {
-      msgs: ['I design and develop websites and apps', 'I blog about self improvement', 'I make the most OCD form of art', 'I drink more coffee than I should'],
-      msg: 'I design and develop websites and apps',
+      msgs: ['I create websites and apps', 'I blog about self improvement', 'I make the most OCD form of art', 'I drink more coffee than I should'],
+      msg: 'I create websites and apps',
       index: 0,
       scroll: false
     }
@@ -204,6 +204,7 @@ export default {
         background-color: var(--white);
         border: 2vh solid var(--primary);
         &--main {
+            letter-spacing: 1.5rem;
             font-size: 8vmin;
             display: block;
             @include bp-phone {
@@ -211,6 +212,7 @@ export default {
             }
         }
         &--sub {
+            letter-spacing: .5rem;
             font-size: 4vmin;
             color: var(--primary);
             display: block;
@@ -236,6 +238,7 @@ export default {
         }
     }
     &__link {
+        letter-spacing: .1rem;
         @include uppercase;
         color: var(--black);
         font-size: 6vh;

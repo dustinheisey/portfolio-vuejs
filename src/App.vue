@@ -13,10 +13,12 @@
 <script>
 import Header from './components/Header'
 import About from './components/About'
+import Intro from './components/portfolio/Intro'
 import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Grid1 from './components/portfolio/grid/Grid1'
+import Grid4 from './components/portfolio/grid/Grid4'
 import Grid5 from './components/portfolio/grid/Grid5'
 export default {
   name: 'App',
@@ -25,6 +27,8 @@ export default {
     Grid1,
     About,
     Grid5,
+    Intro,
+    Grid4,
     Portfolio,
     Contact,
     'app-footer': Footer

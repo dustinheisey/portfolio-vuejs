@@ -288,6 +288,7 @@ export default {
     }
     &__text {
         &--heading {
+            letter-spacing: .3rem;
             font-size: 6vmin;
             @include uppercase;
             margin-bottom: 1rem;

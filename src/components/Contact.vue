@@ -118,6 +118,8 @@
     &__heading {
         color: var(--black);
         font-size: 6vh;
+        letter-spacing: .1rem;
+        font-weight: bolder;
         @include uppercase;
 
         @include bp-phone {
@@ -126,6 +128,7 @@
     }
 
     &__text {
+        letter-spacing: .05rem;
         color: var(--grey-light);
         @include uppercase;
         font-size: 3vh;
