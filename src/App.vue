@@ -20,11 +20,6 @@ import Grid1 from './components/portfolio/grid/Grid1'
 import Grid5 from './components/portfolio/grid/Grid5'
 export default {
   name: 'App',
-  data () {
-    return {
-      title: 'Portfolio'
-    }
-  },
   components: {
     'app-header': Header,
     Grid1,
@@ -134,6 +129,9 @@ export default {
     --off-black : #1e272e;
     --black : #232323;
     color: var(--black);
+  }
+  body {
+    overflow-x: hidden;
   }
   @mixin bp-phone {
       @media only screen and (max-width: 599px) {

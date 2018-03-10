@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="header" id="header">
       <div class="header__logo-box">
           <div class="header__logo-box--outer">
               <div class="header__logo-box--inner">
@@ -9,9 +9,9 @@
       </div>
       <nav class="nav">
               <ul class="nav__list">
-                  <li class="nav__item"><a href="#about" class="nav__link" v-smooth-scroll="{ duration: 3000, offset: 140 }">About</a></li>
-                  <li class="nav__item"><a href="#works" class="nav__link" v-smooth-scroll="{ duration: 5000, offset: 80 }">Works</a></li>
-                  <li class="nav__item"><a href="#contact" class="nav__link" v-smooth-scroll="{ duration: 8000, offset: 175 }">Contact</a></li>
+                  <li class="nav__item"><a href="#about" class="nav__link" v-smooth-scroll="{offset: 140 }">About</a></li>
+                  <li class="nav__item"><a href="#works" class="nav__link" v-smooth-scroll="{offset: 80 }">Works</a></li>
+                  <li class="nav__item"><a href="#contact" class="nav__link" v-smooth-scroll="{offset: 175 }">Contact</a></li>
               </ul>
       </nav>
       <div class="header__heading-box--outer">
@@ -31,7 +31,8 @@ export default {
     return {
       msgs: ['I design and develop websites and apps', 'I blog about self improvement', 'I make the most OCD form of art', 'I drink more coffee than I should'],
       msg: 'I design and develop websites and apps',
-      index: 0
+      index: 0,
+      scroll: false
     }
   },
   created () {
