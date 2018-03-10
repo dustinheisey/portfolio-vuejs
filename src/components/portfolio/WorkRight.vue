@@ -3,16 +3,16 @@
 
     <div class="section__text-box">
         <h2 class="section__text--heading">{{heading}}</h2>
-        <i v-if="html" class="devicon-html5-plain colored section__icon--html"> </i>
-        <i v-if="css" class="devicon-css3-plain colored section__icon--css"> </i>
-        <i v-if="js" class="devicon-javascript-plain colored section__icon--js"> </i>
-        <i v-if="bootstrap" class="devicon-bootstrap-plain colored section__icon--bootstrap"> </i>
-        <i v-if="wordpress" class="devicon-wordpress-plain colored section__icon--wordpress"> </i>
-        <i v-if="google" class="devicon-google-plain colored section__icon--google"> </i>
-        <i v-if="sass" class="devicon-sass-plain colored section__icon--sass"> </i>
-        <i v-if="vuejs" class="devicon-vuejs-plain colored section__icon--vuejs"> </i>
-        <i v-if="webpack" class="devicon-webpack-plain colored section__icon--webpack"> </i>
-        <i v-if="babel" class="devicon-babel-plain colored section__icon--babel"> </i>
+        <div tooltip="HTML5" tooltip-position="bottom"><i v-if="html" class="devicon-html5-plain colored section__icon--html"></i></div>
+        <div tooltip="CSS3" tooltip-position="bottom"><i v-if="css" class="devicon-css3-plain colored section__icon--css"></i></div>
+        <div tooltip="Javascript" tooltip-position="bottom"><i v-if="js" class="devicon-javascript-plain colored section__icon--js"></i></div>
+        <div tooltip="Twitter Bootstrap" tooltip-position="bottom"><i v-if="bootstrap" class="devicon-bootstrap-plain colored section__icon--bootstrap"></i></div>
+        <div tooltip="Wordpress" tooltip-position="bottom"><i v-if="wordpress" class="devicon-wordpress-plain colored section__icon--wordpress"></i></div>
+        <div tooltip="SEO" tooltip-position="bottom"><i v-if="google" class="devicon-google-plain colored section__icon--google"></i></div>
+        <div tooltip="SCSS" tooltip-position="bottom"><i v-if="sass" class="devicon-sass-plain colored section__icon--sass"></i></div>
+        <div tooltip="VueJS" tooltip-position="bottom"><i v-if="vuejs" class="devicon-vuejs-plain colored section__icon--vuejs"></i></div>
+        <div tooltip="Webpack" tooltip-position="bottom"><i v-if="webpack" class="devicon-webpack-plain colored section__icon--webpack"></i></div>
+        <div tooltip="Babel" tooltip-position="bottom"><i v-if="babel" class="devicon-babel-plain colored section__icon--babel"></i></div>
     </div>
 
     <div class="section__img-box">
@@ -86,6 +86,52 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+[tooltip]{
+  position:relative;
+  display:inline-block;
+}
+[tooltip]::before {
+    content: "";
+    position: absolute;
+    top:-6px;
+    left:50%;
+    transform: translateX(-50%);
+    border: none;
+    z-index: 99;
+    opacity:0;
+}
+[tooltip-position='bottom']::before{
+  top:100%;
+  margin-top:8px;
+  transform: translateX(-50%) translatey(-100%) rotate(-180deg)
+}
+[tooltip]::after {
+    content: attr(tooltip);
+    position: absolute;
+    left:50%;
+    top:-6px;
+    transform: translateX(-50%)   translateY(-100%);
+    background: var(--primary);
+    text-align: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'lato';
+    min-width: 80px;
+    border-radius: 5px;
+    pointer-events: none;
+    padding: 1vmin;
+    z-index:99;
+    opacity:0;
+}
+[tooltip-position='bottom']::after{
+  top:100%;
+  margin-top:8px;
+  transform: translateX(-50%) translateY(0%);
+}
+[tooltip]:hover::after,[tooltip]:hover::before {
+   opacity:1
+}
 @mixin bp-phone {
     @media only screen and (max-width: 599px) {
         @content;
