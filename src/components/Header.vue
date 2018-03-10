@@ -9,9 +9,9 @@
       </div>
       <nav class="nav">
               <ul class="nav__list">
-                  <li class="nav__item"><a href="#about" class="nav__link" v-smooth-scroll="{offset: 140 }">About</a></li>
-                  <li class="nav__item"><a href="#works" class="nav__link" v-smooth-scroll="{offset: 80 }">Works</a></li>
-                  <li class="nav__item"><a href="#contact" class="nav__link" v-smooth-scroll="{offset: 175 }">Contact</a></li>
+                  <li class="nav__item"><a href="#about" class="nav__link" v-scroll-to="{ el: '#about', duration: 3000, offset: 180, }">About</a></li>
+                  <li class="nav__item"><a href="#works" class="nav__link" v-scroll-to="{ el: '#works', duration: 4000, offset: 75, }">Works</a></li>
+                  <li class="nav__item"><a href="#contact" class="nav__link" v-scroll-to="{ el: '#contact', duration: 8000, offset: 180 }">Contact</a></li>
               </ul>
       </nav>
       <div class="header__heading-box--outer">

@@ -3,8 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import vueSmoothScroll from 'vue-smooth-scroll'
-Vue.use(vueSmoothScroll)
+import VueScrollTo from 'vue-scrollto'
+Vue.use(VueScrollTo)
 
 Vue.config.productionTip = false
 

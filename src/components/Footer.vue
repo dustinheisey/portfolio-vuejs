@@ -3,7 +3,7 @@
     <small class="footer__copywrite">Made by me, <span class="footer__copywrite--name">Dustin Heisey</span> &copy;</small>
     <div class="footer__links">
         <a href="https://github.com/CuriousSkeptic/PortfolioV2" target="_blank"><i class="devicon-github-plain colored section__icon--github"></i></a>
-        <a href="#header" v-smooth-scroll="{offset: -50}" class="to-top">
+        <a href="#header" v-scroll-to="{ el: '#header', duration: 8000, offset: -50, }" class="to-top">
           <svg width="100%" height="100%" viewBox="0 0 41 22">
             <g transform="matrix(1,0,0,1,-434,-242)">
               <g id="Up" transform="matrix(1,3.69779e-32,1.2326e-32,1,245.5,-143.5)">
