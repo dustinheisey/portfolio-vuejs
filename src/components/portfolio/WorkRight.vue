@@ -111,7 +111,7 @@ export default {
     left:50%;
     top:-6px;
     transform: translateX(-50%)   translateY(-100%);
-    background: var(--primary);
+    background: var(--black);
     text-align: center;
     color: var(--white);
     font-size: 1.5rem;
