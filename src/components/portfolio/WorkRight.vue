@@ -29,14 +29,14 @@
 </template>
 
 <script>
-import Grid1 from './grid/Grid1'
-import Grid2 from './grid/Grid2'
-import Grid3 from './grid/Grid3'
-import Grid4 from './grid/Grid4'
-import Grid5 from './grid/Grid5'
+import Grid1 from "./grid/Grid1";
+import Grid2 from "./grid/Grid2";
+import Grid3 from "./grid/Grid3";
+import Grid4 from "./grid/Grid4";
+import Grid5 from "./grid/Grid5";
 
 export default {
-  props: ['heading', 'subheading', 'grid', 'link', 'src'],
+  props: ["heading", "subheading", "grid", "link", "src"],
   components: {
     Grid1,
     Grid2,
@@ -44,7 +44,7 @@ export default {
     Grid4,
     Grid5
   },
-  data () {
+  data() {
     return {
       html: false,
       css: false,
@@ -56,276 +56,278 @@ export default {
       vuejs: false,
       webpack: false,
       babel: false
-    }
+    };
   },
-  created () {
+  created() {
     for (var icon in this.subheading) {
-      if (this.subheading[icon] === 'html') {
-        this.html = true
-      } else if (this.subheading[icon] === 'css') {
-        this.css = true
-      } else if (this.subheading[icon] === 'js') {
-        this.js = true
-      } else if (this.subheading[icon] === 'bootstrap') {
-        this.bootstrap = true
-      } else if (this.subheading[icon] === 'wordpress') {
-        this.wordpress = true
-      } else if (this.subheading[icon] === 'google') {
-        this.google = true
-      } else if (this.subheading[icon] === 'sass') {
-        this.sass = true
-      } else if (this.subheading[icon] === 'vuejs') {
-        this.vuejs = true
-      } else if (this.subheading[icon] === 'webpack') {
-        this.webpack = true
-      } else if (this.subheading[icon] === 'babel') {
-        this.babel = true
+      if (this.subheading[icon] === "html") {
+        this.html = true;
+      } else if (this.subheading[icon] === "css") {
+        this.css = true;
+      } else if (this.subheading[icon] === "js") {
+        this.js = true;
+      } else if (this.subheading[icon] === "bootstrap") {
+        this.bootstrap = true;
+      } else if (this.subheading[icon] === "wordpress") {
+        this.wordpress = true;
+      } else if (this.subheading[icon] === "google") {
+        this.google = true;
+      } else if (this.subheading[icon] === "sass") {
+        this.sass = true;
+      } else if (this.subheading[icon] === "vuejs") {
+        this.vuejs = true;
+      } else if (this.subheading[icon] === "webpack") {
+        this.webpack = true;
+      } else if (this.subheading[icon] === "babel") {
+        this.babel = true;
       }
     }
-    console.log(this.src)
+    console.log(this.src);
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
-[tooltip]{
-  position:relative;
-  display:inline-block;
+[tooltip] {
+  position: relative;
+  display: inline-block;
 }
 [tooltip]::before {
-    content: "";
-    position: absolute;
-    top:-6px;
-    left:50%;
-    transform: translateX(-50%);
-    border: none;
-    z-index: 99;
-    opacity:0;
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  z-index: 99;
+  opacity: 0;
 }
-[tooltip-position='bottom']::before{
-  top:100%;
-  margin-top:8px;
-  transform: translateX(-50%) translatey(-100%) rotate(-180deg)
+[tooltip-position="bottom"]::before {
+  top: 100%;
+  margin-top: 8px;
+  transform: translateX(-50%) translatey(-100%) rotate(-180deg);
 }
 [tooltip]::after {
-    content: attr(tooltip);
-    position: absolute;
-    left:50%;
-    top:-6px;
-    transform: translateX(-50%)   translateY(-100%);
-    background: var(--black);
-    text-align: center;
-    color: var(--white);
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-family: 'lato';
-    min-width: 80px;
-    border-radius: 5px;
-    pointer-events: none;
-    padding: 1vmin;
-    z-index:99;
-    opacity:0;
+  content: attr(tooltip);
+  position: absolute;
+  left: 50%;
+  top: -6px;
+  transform: translateX(-50%) translateY(-100%);
+  background: var(--black);
+  text-align: center;
+  color: var(--white);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: "lato";
+  min-width: 80px;
+  border-radius: 5px;
+  pointer-events: none;
+  padding: 1vmin;
+  z-index: 99;
+  opacity: 0;
 }
-[tooltip-position='bottom']::after{
-  top:100%;
-  margin-top:8px;
+[tooltip-position="bottom"]::after {
+  top: 100%;
+  margin-top: 8px;
   transform: translateX(-50%) translateY(0%);
 }
-[tooltip]:hover::after,[tooltip]:hover::before {
-   opacity:1
+[tooltip]:hover::after,
+[tooltip]:hover::before {
+  opacity: 1;
 }
 @mixin bp-phone {
-    @media only screen and (max-width: 599px) {
-        @content;
-    }
+  @media only screen and (max-width: 599px) {
+    @content;
+  }
 }
 @mixin bp-tablet-p {
-    @media only screen and (max-width: 899px) and (min-width: 600px) {
-        @content;
-    }
+  @media only screen and (max-width: 899px) and (min-width: 600px) {
+    @content;
+  }
 }
 @mixin bp-tablet-l {
-    @media only screen and (max-width: 1199px) and (min-width: 900px) {
-        @content;
-    }
+  @media only screen and (max-width: 1199px) and (min-width: 900px) {
+    @content;
+  }
 }
 @mixin bp-laptop {
-    @media only screen and (max-width: 1799px) and (min-width: 1200px) {
-        @content;
-    }
+  @media only screen and (max-width: 1799px) and (min-width: 1200px) {
+    @content;
+  }
 }
 @mixin bp-desktop {
-    @media only screen and (min-width: 1800px) {
-        @content;
-    }
+  @media only screen and (min-width: 1800px) {
+    @content;
+  }
 }
 @mixin center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
-    align-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  align-content: center;
 }
 @mixin center-h {
-    text-align: center;
+  text-align: center;
 }
 @mixin uppercase {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 @mixin slant {
-    transform: skewY(-8deg);
+  transform: skewY(-8deg);
 }
 @mixin unslant {
-    transform: skewY(7deg);
+  transform: skewY(7deg);
 }
 @mixin img-left {
-    @include slant;
-    height: 110vmin;
-    width: 100%;
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-areas: "img text";
-    @include bp-phone {
-        height: 77vh;
-        display:flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
+  @include slant;
+  height: 110vmin;
+  width: 100%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "img text";
+  @include bp-phone {
+    height: 77vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 
-    @include bp-tablet-p {
-        height: 80vh;
-    }
+  @include bp-tablet-p {
+    height: 80vh;
+  }
 }
 @mixin img-right {
-    @include slant;
-    height: 110vh;
-    width: 100%;
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-areas: "text img";
-    @include bp-phone {
-        height: 77vh;
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+  @include slant;
+  height: 110vh;
+  width: 100%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "text img";
+  @include bp-phone {
+    height: 77vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-    @include bp-tablet-p {
-        height: 80vh;
-    }
+  @include bp-tablet-p {
+    height: 80vh;
+  }
 }
 @mixin grid {
-    height: 80vh;
-    width: 100%;
-    @include slant;
-    background-color: transparent;
-    margin: 3vh 0;
-    display: grid;
-    grid-gap: 3vh;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    @include bp-phone {
-        height: 40vh;
-    }
+  height: 80vh;
+  width: 100%;
+  @include slant;
+  background-color: transparent;
+  margin: 3vh 0;
+  display: grid;
+  grid-gap: 3vh;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  @include bp-phone {
+    height: 40vh;
+  }
 }
 @mixin grid-itm {
-    height: 100%;
-    width: 100%;
-    background-color: var(--primary);
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary);
 }
 @mixin icon {
+  font-size: 6vh;
+  @include bp-phone {
     font-size: 6vh;
-    @include bp-phone {
-        font-size: 6vh;
-    }
-    @include bp-tablet-p {
-        font-size: 1vh;
-    }
+  }
+  @include bp-tablet-p {
+    font-size: 1vh;
+  }
 }
-.section{
-    &-right {
-        @include img-right;
-        background-color: var(--white);
-    }
-    &__img {
-        height: 85%;
-        width: 85%;
-        background-color: var(--white);
-        @include unslant;
-        transition: 1s all;
-        grid-area: img;
-        &-box {
-            @include center;
-            &--outer {
-                @include center;
-                height: 90vh;
-                width: 90vh;
-                margin: 3rem;
-                background-color: var(--black);
-                box-shadow: 1px 1px 8px 0px rgba(50, 50, 50, 0.73);
-                transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-                @include bp-phone {
-                    height: 45vh;
-                    width: 45vh;
-                    margin-bottom: 0;
-                }
-
-                @include bp-tablet-p {
-                    height: 55vh;
-                    width: 55vh;
-                }
-                &:hover {
-                    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-                }
-            }
-            &--inner {
-                @include center;
-                height: 90%;
-                width: 90%;
-                background-color: var(--grey-light);
-            }
-            &--img {
-                @include center;
-                height: 90%;
-                width: 90%;
-                border: 2rem solid var(--primary);
-                background-color: var(--white);
-                transition: 1s all;
-            }
-        }
-    }
-    &__text-box {
-        @include unslant;
-        @include center-h;
-        margin: auto;
-        grid-area: text;
+.section {
+  &-right {
+    @include img-right;
+    background-color: var(--white);
+  }
+  &__img {
+    height: 85%;
+    width: 85%;
+    background-color: var(--white);
+    @include unslant;
+    transition: 1s all;
+    grid-area: img;
+    &-box {
+      @include center;
+      &--outer {
+        @include center;
+        height: 90vh;
+        width: 90vh;
+        margin: 3rem;
+        background-color: var(--black);
+        box-shadow: 1px 1px 8px 0px rgba(50, 50, 50, 0.73);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         @include bp-phone {
-            margin-top: 1vh;
+          height: 45vh;
+          width: 45vh;
+          margin-bottom: 0;
         }
-    }
-    &__text {
-        &--heading {
-            font-size: 6vmin;
-            @include uppercase;
-            margin-bottom: 1rem;
-            letter-spacing: .3rem;
-            & a {
-                color: var(--black);
-                transition: .5s all;
-                &:hover {
-                color: var(--primary);
-                }
-            }
-            @include bp-phone {
-                font-size: 8vmin;
-            }
-            @include bp-tablet-p {
-                font-size: 4vmin;
-            }
+
+        @include bp-tablet-p {
+          height: 55vh;
+          width: 55vh;
         }
+        &:hover {
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+      }
+      &--inner {
+        @include center;
+        height: 90%;
+        width: 90%;
+        background-color: var(--grey-light);
+      }
+      &--img {
+        @include center;
+        height: 90%;
+        width: 90%;
+        border: 2rem solid var(--primary);
+        background-color: var(--white);
+        transition: 1s all;
+      }
     }
+  }
+  &__text-box {
+    @include unslant;
+    @include center-h;
+    margin: auto;
+    grid-area: text;
+    @include bp-phone {
+      margin-top: 1vh;
+    }
+  }
+  &__text {
+    &--heading {
+      font-size: 6vmin;
+      @include uppercase;
+      margin-bottom: 1rem;
+      letter-spacing: 0.3rem;
+      & a {
+        color: var(--black);
+        transition: 0.5s all;
+        &:hover {
+          color: var(--primary);
+        }
+      }
+      @include bp-phone {
+        font-size: 8vmin;
+      }
+      @include bp-tablet-p {
+        font-size: 4vmin;
+      }
+    }
+  }
 }
 </style>

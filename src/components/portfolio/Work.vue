@@ -22,17 +22,17 @@
 </template>
 
 <script>
-import WorkLeft from './WorkLeft'
-import WorkRight from './WorkRight'
-import Grid1 from './grid/Grid1'
-import Grid2 from './grid/Grid2'
-import Grid3 from './grid/Grid3'
-import Grid4 from './grid/Grid4'
-import Grid5 from './grid/Grid5'
-import Grid6 from './grid/Grid6'
+import WorkLeft from "./WorkLeft";
+import WorkRight from "./WorkRight";
+import Grid1 from "./grid/Grid1";
+import Grid2 from "./grid/Grid2";
+import Grid3 from "./grid/Grid3";
+import Grid4 from "./grid/Grid4";
+import Grid5 from "./grid/Grid5";
+import Grid6 from "./grid/Grid6";
 
 export default {
-  props: ['heading', 'subheading', 'grid', 'direction', 'link', 'src'],
+  props: ["heading", "subheading", "grid", "direction", "link", "src"],
   components: {
     WorkLeft,
     WorkRight,
@@ -43,5 +43,5 @@ export default {
     Grid5,
     Grid6
   }
-}
+};
 </script>

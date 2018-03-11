@@ -5,23 +5,65 @@
 </template>
 
 <script>
-import Work from './Work'
-const path = '../../../static/assets/'
+import Work from "./Work";
+const path = "../../../static/assets/";
 export default {
   components: {
     Work
   },
-  data () {
+  data() {
     return {
-
       works: [
-        { heading: 'Razorblade Art', subheading: ['html', 'css', 'bootstrap'], grid: 2, direction: 0, link: 'http://razorbladeart.com', src: path + 'razorblade-art.jpg' },
-        { heading: 'Snake', subheading: ['html', 'css', 'js'], grid: 3, direction: 1, link: 'http://snake.dustinheisey.com', src: path + 'snake.jpg' },
-        { heading: 'Improvement Bay', subheading: ['css', 'wordpress', 'google'], grid: 4, direction: 0, link: 'http://improvementbay.com', src: path + 'improvement-bay.jpg' },
-        { heading: 'Circles', subheading: ['html', 'css', 'sass', 'js'], grid: 5, direction: 1, link: 'http://circles.dustinheisey.com', src: path + 'circles.jpg' },
-        { heading: 'Geomancy', subheading: ['html', 'css', 'sass', 'js', 'vuejs', 'webpack', 'babel'], grid: 6, direction: 0, link: 'http://geomancy.dustinheisey.com', src: path + 'geomancy.jpg' }
+        {
+          heading: "Razorblade Art",
+          subheading: ["html", "css", "bootstrap"],
+          grid: 2,
+          direction: 0,
+          link: "http://razorbladeart.com",
+          src: path + "razorblade-art.jpg"
+        },
+        {
+          heading: "Snake",
+          subheading: ["html", "css", "js"],
+          grid: 3,
+          direction: 1,
+          link: "http://snake.dustinheisey.com",
+          src: path + "snake.jpg"
+        },
+        {
+          heading: "Improvement Bay",
+          subheading: ["css", "wordpress", "google"],
+          grid: 4,
+          direction: 0,
+          link: "http://improvementbay.com",
+          src: path + "improvement-bay.jpg"
+        },
+        {
+          heading: "Circles",
+          subheading: ["html", "css", "sass", "js"],
+          grid: 5,
+          direction: 1,
+          link: "http://circles.dustinheisey.com",
+          src: path + "circles.jpg"
+        },
+        {
+          heading: "Geomancy",
+          subheading: [
+            "html",
+            "css",
+            "sass",
+            "js",
+            "vuejs",
+            "webpack",
+            "babel"
+          ],
+          grid: 6,
+          direction: 0,
+          link: "http://geomancy.dustinheisey.com",
+          src: path + "geomancy.jpg"
+        }
       ]
-    }
+    };
   }
-}
+};
 </script>
