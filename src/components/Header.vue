@@ -10,7 +10,7 @@
       <nav class="nav">
               <ul class="nav__list">
                   <li class="nav__item"><a href="#about" class="nav__link" v-scroll-to="{ el: '#about', duration: 3000, offset: 40, }">About</a></li>
-                  <li class="nav__item"><a href="#works" class="nav__link" v-scroll-to="{ el: '#works', duration: 4000, offset: 75, }">Portfolio</a></li>
+                  <li class="nav__item"><a href="#works" class="nav__link" v-scroll-to="{ el: '#works', duration: 4000, offset: 75, }">Works</a></li>
                   <li class="nav__item"><a href="#contact" class="nav__link" v-scroll-to="{ el: '#contact', duration: 8000, offset: 180 }">Contact</a></li>
               </ul>
       </nav>
@@ -118,6 +118,7 @@ export default {
                             "h";
     }
     @include bp-tablet-p {
+        height: 130vh;
         clip-path: polygon(0 0, 100% 0, 100% 87%, 0 97%);
         grid-template-rows: 1fr .3fr 2fr;
         grid-template-columns: 100%;
@@ -154,6 +155,7 @@ export default {
             @include bp-tablet-p {
                 margin: 0;
                 margin-top: 4rem;
+                margin-bottom: 0;
                 height: 25vh;
                 width: 25vh;
             }
@@ -188,6 +190,11 @@ export default {
                 height: 60%;
                 width: 90%;
             }
+            @include bp-tablet-l {
+                height: 100%;
+                width: 90%;
+                margin: 0 auto;
+            }
         }
         &--inner {
             @include center;
@@ -195,6 +202,8 @@ export default {
             height: 85%;
             width: 95%;
             background-color: var(--grey-light);
+            @include bp-phone {
+            }
         }
     }
     &__heading {
@@ -203,6 +212,10 @@ export default {
         width: 95%;
         background-color: var(--white);
         border: 2vh solid var(--primary);
+        @include bp-phone {
+            padding: 5vh;
+            border-width: 1vh;
+        }
         &--main {
             letter-spacing: 1.5rem;
             font-size: 8vmin;
@@ -238,6 +251,12 @@ export default {
         @include bp-phone {
             padding-left: 0;
         }
+        @include bp-tablet-p {
+            padding-left: 0;
+        }
+        @include bp-tablet-l {
+            padding-left: 0;
+        }
     }
     &__link {
         letter-spacing: .1rem;
@@ -254,7 +273,8 @@ export default {
             margin-right: 2vw;
         }
         @include bp-tablet-p {
-            font-size: 3.5rem;
+            letter-spacing: 0rem;
+            font-size: 3rem;
             margin-left: 4vw;
             margin-right: 4vw;
         }

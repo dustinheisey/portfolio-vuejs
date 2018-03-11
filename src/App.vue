@@ -214,72 +214,53 @@ a {
     text-decoration: none;
 }
 @mixin icon {
-    font-size: 6vh;
+    font-size: 8vmin;
+    margin: 0 .1rem;
 
-    @include bp-phone {
-        font-size: 6vh;
+    @include bp-tablet-p {
+        font-size: 6vmin;
     }
 }
 .section__icon {
     &--html {
         color: var(--red);
-        font-size: 8vmin;
         @include icon;
-        margin: 0 .1rem;
     }
     &--css {
         color: var(--blue-light);
-        font-size: 8vmin;
         @include icon;
-        margin: 0 .1rem;
     }
     &--js {
         color: var(--yellow);
-        font-size: 8vmin;
         @include icon;
-        margin: 0 .1rem;
     }
     &--bootstrap {
         color: var(--purple);
-        font-size: 8vmin;
         @include icon;
-        margin: 0 .1rem;
     }
     &--wordpress {
         color: var(--grey-dark);
-        font-size: 8vmin;
         @include icon;
-        margin: 0 .1rem;
     }
     &--google {
         color: var(--blue);
-        font-size: 8vmin;
         @include icon;
-        margin: 0 .1rem;
     }
     &--vuejs {
         color: #42b883;
-        font-size: 8vmin;
         @include icon;
-        margin: 0 .1rem;
     }
     &--webpack {
         color: #1d78c1;
-        font-size: 8vmin;
         @include icon;
-        margin: 0 .1rem;
     }
     &--babel {
         color: #fed330;
-        font-size: 8vmin;
         @include icon;
-        margin: 0 .1rem;
     }
     &--sass {
         color: #c69;
-        font-size: 8vmin;
         @include icon;
-        margin: 0 .1rem;
     }
     &--github {
         font-size: 5vmin;

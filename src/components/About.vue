@@ -124,6 +124,10 @@
             font-size: 9vmin;
             letter-spacing: .5rem;
         }
+        @include bp-tablet-l {
+            font-size: 11vmin;
+            letter-spacing: .5rem;
+        }
     }
 
     &__text {
@@ -138,6 +142,10 @@
         }
 
         @include bp-tablet-p {
+            letter-spacing: .5rem;
+        }
+
+        @include bp-tablet-l {
             letter-spacing: .5rem;
         }
     }

@@ -114,16 +114,24 @@
         padding: 5%;
         background-color: var(--white);
         border: 2rem solid var(--primary);
+        @include bp-phone {
+            border-width: 1vh;
+        }
     }
     &__heading {
         color: var(--black);
         font-size: 6vh;
         letter-spacing: .1rem;
         font-weight: bolder;
+        margin-top: 5vh;
         @include uppercase;
 
         @include bp-phone {
             font-size: 1.5rem;
+        }
+
+        @include bp-tablet-p {
+            font-size: 3vh;
         }
     }
 
@@ -132,9 +140,15 @@
         color: var(--grey-light);
         @include uppercase;
         font-size: 3vh;
+        margin-bottom: 5vh;
 
         @include bp-phone {
             font-size: 1rem;
+        }
+
+        @include bp-tablet-p {
+            font-size: 2vh;
+            letter-spacing: .3rem;
         }
     }
 

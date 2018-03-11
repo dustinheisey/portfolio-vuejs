@@ -193,6 +193,10 @@ export default {
         flex-direction: column;
         justify-content: space-around;
     }
+
+    @include bp-tablet-p {
+        height: 80vh;
+    }
 }
 @mixin img-right {
     @include slant;
@@ -207,6 +211,10 @@ export default {
         display:flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+
+    @include bp-tablet-p {
+        height: 80vh;
     }
 }
 @mixin grid {
@@ -232,6 +240,9 @@ export default {
     font-size: 6vh;
     @include bp-phone {
         font-size: 6vh;
+    }
+    @include bp-tablet-p {
+        font-size: 1vh;
     }
 }
 .section{
@@ -261,6 +272,11 @@ export default {
                     width: 45vh;
                     margin-bottom: 0;
                 }
+
+                @include bp-tablet-p {
+                    height: 55vh;
+                    width: 55vh;
+                }
                 &:hover {
                     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
                 }
@@ -287,7 +303,7 @@ export default {
         margin: auto;
         grid-area: text;
         @include bp-phone {
-            margin-top: 6vh;
+            margin-top: 1vh;
         }
     }
     &__text {
@@ -307,7 +323,7 @@ export default {
                 font-size: 8vmin;
             }
             @include bp-tablet-p {
-                font-size: 5vmin;
+                font-size: 4vmin;
             }
         }
     }
