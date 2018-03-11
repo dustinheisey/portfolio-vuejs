@@ -10,7 +10,7 @@
       <nav class="nav">
               <ul class="nav__list">
                   <li class="nav__item"><a href="#about" class="nav__link" v-scroll-to="{ el: '#about', duration: 3000, offset: 40, }">About</a></li>
-                  <li class="nav__item"><a href="#works" class="nav__link" v-scroll-to="{ el: '#works', duration: 4000, offset: 75, }">Works</a></li>
+                  <li class="nav__item"><a href="#works" class="nav__link" v-scroll-to="{ el: '#works', duration: 4000, offset: 75, }">Portfolio</a></li>
                   <li class="nav__item"><a href="#contact" class="nav__link" v-scroll-to="{ el: '#contact', duration: 8000, offset: 180 }">Contact</a></li>
               </ul>
       </nav>
@@ -208,6 +208,7 @@ export default {
             font-size: 8vmin;
             display: block;
             @include bp-phone {
+                letter-spacing: 0rem;
                 font-size: 6vmin;
             }
         }
@@ -217,6 +218,7 @@ export default {
             color: var(--primary);
             display: block;
             @include bp-phone {
+                letter-spacing: 0rem;
                 font-size: 3vmin;
             }
         }
@@ -246,6 +248,7 @@ export default {
         margin-right: 7vh;
         transition: all .3s;
         @include bp-phone {
+            letter-spacing: 0rem;
             font-size: 1.5rem;
             margin-left: 2vw;
             margin-right: 2vw;
