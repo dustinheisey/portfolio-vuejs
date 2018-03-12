@@ -27,7 +27,7 @@ export default {
           subheading: ["html", "css", "js"],
           grid: 3,
           direction: 1,
-          link: "http://snake.dustinheisey.com",
+          link: "https://snake.dustinheisey.com",
           src: path + "snake.jpg"
         },
         {
@@ -43,7 +43,7 @@ export default {
           subheading: ["html", "css", "sass", "js"],
           grid: 5,
           direction: 1,
-          link: "http://circles.dustinheisey.com",
+          link: "https://circles.dustinheisey.com",
           src: path + "circles.jpg"
         },
         {
@@ -59,7 +59,7 @@ export default {
           ],
           grid: 6,
           direction: 0,
-          link: "http://geomancy.dustinheisey.com",
+          link: "https://geomancy.dustinheisey.com",
           src: path + "geomancy.jpg"
         }
       ]
