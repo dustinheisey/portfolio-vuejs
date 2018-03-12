@@ -33,14 +33,64 @@ export default {
     Contact,
     "app-footer": Footer
   },
-  created() {
-    // Color Change
-    var red = 255;
-    var green = 63;
-    var blue = 52;
-    var color;
-    var colorRGBA;
-    var currentColor;
+  data() {
+    return {
+      red: 255,
+      green: 0,
+      blue: 0,
+      currentColor: "",
+      color: "",
+      colorRGBA: ""
+    };
+  },
+  beforeMount() {
+    var index = Math.ceil(Math.random() * 6);
+    var red = this.red;
+    var green = this.green;
+    var blue = this.blue;
+    var currentColor = this.currentColor;
+    var color = this.color;
+    var colorRGBA = this.colorRGBA;
+
+    switch (index) {
+      case 1:
+        red = 255;
+        green = 63;
+        blue = 52;
+        break;
+      case 2:
+        red = 255;
+        green = 211;
+        blue = 42;
+        break;
+      case 3:
+        red = 5;
+        green = 196;
+        blue = 107;
+        break;
+      case 4:
+        red = 0;
+        green = 216;
+        blue = 214;
+        break;
+      case 5:
+        red = 60;
+        green = 64;
+        blue = 198;
+        break;
+      case 6:
+        red = 136;
+        green = 84;
+        blue = 208;
+        break;
+      default:
+        break;
+    }
+
+    color = "rgb(" + red + "," + green + "," + blue + ")";
+    colorRGBA = "rgba(" + red + "," + green + "," + blue + ",0.6)";
+    document.documentElement.style.setProperty("--primary", color);
+    document.documentElement.style.setProperty("--primary-rgba", colorRGBA);
 
     setInterval(() => {
       if (red === 255 && green === 63 && blue === 52) {
