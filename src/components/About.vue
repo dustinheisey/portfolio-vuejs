@@ -5,6 +5,7 @@
               <div class="about__text-box">
                   <h2 class="about__heading">This is Me</h2>
                   <p class="about__text">My name is Dustin Heisey. I'm a self-taught front-end web developer, artist, blogger, and entreprenuer.</p>
+                  <!-- <router-link class="about__btn" tag="button" to="/resume" style="color: var(--white)">Resume</router-link> -->
               </div>
           </div>
       </div>
@@ -129,6 +130,32 @@
       letter-spacing: 0.5rem;
     }
   }
+
+  // &__btn {
+  //   @include unslant;
+  //   @include uppercase;
+  //   text-align: center;
+  //   letter-spacing: 1rem;
+  //   padding: 2vh 15vh;
+  //   border: none;
+  //   color: var(--white);
+  //   background-color: var(--black);
+  //   cursor: pointer;
+
+  //   &:focus {
+  //     outline: 0;
+  //   }
+
+  //   &:hover {
+  //     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);
+  //   }
+
+  //   & router-link {
+  //     display: block;
+  //     height: 100%;
+  //     width: 100%;
+  //   }
+  // }
 
   &__text {
     letter-spacing: 1rem;
