@@ -228,45 +228,13 @@ body {
   padding: 3vh;
   width: 100%;
   max-width: 100%;
+  font-family: "lato", sans-serif;
 }
 html {
   font-size: 10px;
   line-height: 1.5;
 }
-h1 {
-  font-family: "lato", sans-serif;
-}
-
-h2 {
-  font-family: "lato", sans-serif;
-}
-
-h3 {
-  font-family: "lato", sans-serif;
-}
-
-h4 {
-  font-family: "lato", sans-serif;
-}
-
-h5 {
-  font-family: "lato", sans-serif;
-}
-
-h6 {
-  font-family: "lato", sans-serif;
-}
-
-small {
-  font-family: "lato", sans-serif;
-}
-
-p {
-  font-family: "open-sans", sans-serif;
-}
-
 a {
-  font-family: "lato", sans-serif;
   text-decoration: none;
 }
 </style>

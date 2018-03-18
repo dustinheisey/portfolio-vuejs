@@ -158,7 +158,9 @@
   }
 
   &__text {
+    color: var(--grey);
     // letter-spacing: 1rem;
+    font-weight: 500;
     @include unslant;
     @include uppercase;
     font-size: 5vmin;
