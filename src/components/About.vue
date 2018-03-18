@@ -108,6 +108,8 @@
     @include bp-phone {
       padding: 0 3rem;
       border: 3vmin solid var(--color-primary);
+      width: 90%;
+      height: 90%;
     }
   }
 
