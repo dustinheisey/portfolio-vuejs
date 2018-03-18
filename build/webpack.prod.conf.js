@@ -10,6 +10,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const OptimizeCSSPlugin = require("optimize-css-assets-webpack-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+// const CriticalPlugin = require("webpack-plugin-critical").CriticalPlugin;
 
 const env = require("../config/prod.env");
 
@@ -29,6 +30,14 @@ const webpackConfig = merge(baseWebpackConfig, {
   },
   plugins: [
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
+    // new CriticalPlugin({
+    //   src:
+    //     "/Users/dustinheisey/Documents/dev/Projects/portfolio-vuejs/index.html",
+    //   inline: true,
+    //   minify: true,
+    //   dest:
+    //     "/Users/dustinheisey/Documents/dev/Projects/portfolio-vuejs/dist/index.html"
+    // }),
     new webpack.DefinePlugin({
       "process.env": env
     }),
