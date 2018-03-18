@@ -126,7 +126,7 @@
 @mixin grid-itm {
   height: 100%;
   width: 100%;
-  background-color: var(--primary);
+  background-color: var(--black);
 }
 
 @mixin icon {
@@ -149,20 +149,25 @@ $primary: var(--primary);
     @include grid-itm;
     &-1 {
       grid-row: 1/3;
+      background-color: var(--black);
     }
     &-2 {
       grid-area: 1/2/3/4;
+      background-color: var(--black);
     }
     &-3 {
       grid-column: 4/5;
       grid-row: 1/-1;
+      background-color: var(--black);
     }
     &-4 {
       grid-column: 1/4;
       grid-row: 3;
+      background-color: var(--black);
     }
     &-5 {
       grid-area: 1/5/-1/-1;
+      background-color: var(--black);
     }
   }
 }

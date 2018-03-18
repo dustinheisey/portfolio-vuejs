@@ -46,7 +46,7 @@ export default {
     };
   },
   beforeMount() {
-    var index = Math.ceil(Math.random() * 6);
+    var index = Math.floor(Math.random() * 3) + 1;
     var red = this.red;
     var green = this.green;
     var blue = this.blue;
@@ -56,34 +56,19 @@ export default {
 
     switch (index) {
       case 1:
-        red = 255;
-        green = 63;
-        blue = 52;
-        break;
-      case 2:
-        red = 255;
-        green = 211;
-        blue = 42;
-        break;
-      case 3:
         red = 5;
         green = 196;
         blue = 107;
         break;
-      case 4:
+      case 2:
         red = 0;
         green = 216;
         blue = 214;
         break;
-      case 5:
+      case 3:
         red = 60;
         green = 64;
         blue = 198;
-        break;
-      case 6:
-        red = 136;
-        green = 84;
-        blue = 208;
         break;
       default:
         break;
@@ -95,12 +80,12 @@ export default {
     document.documentElement.style.setProperty("--primary-rgba", colorRGBA);
 
     setInterval(() => {
-      if (red === 255 && green === 63 && blue === 52) {
-        currentColor = "red";
-      }
-      if (red === 255 && green === 211 && blue === 42) {
-        currentColor = "yellow";
-      }
+      // if (red === 255 && green === 63 && blue === 52) {
+      //   currentColor = "red";
+      // }
+      // if (red === 255 && green === 211 && blue === 42) {
+      //   currentColor = "yellow";
+      // }
       if (red === 5 && green === 196 && blue === 107) {
         currentColor = "green";
       }
@@ -110,30 +95,28 @@ export default {
       if (red === 60 && green === 64 && blue === 198) {
         currentColor = "blue";
       }
-      if (red === 136 && green === 84 && blue === 208) {
-        currentColor = "purple";
-      }
-      if (currentColor === "red" && (green < 211 || blue > 42)) {
-        if (green < 211) {
-          green++;
-        } else if (blue > 42) {
-          blue--;
-        }
-      } else if (
-        currentColor === "yellow" &&
-        (red > 5 || green > 196 || blue < 107)
-      ) {
-        if (red > 5) {
-          red--;
-        } else if (green > 196) {
-          green--;
-        } else if (blue < 107) {
-          blue++;
-        }
-      } else if (
-        currentColor === "green" &&
-        (red > 0 || green < 216 || blue < 214)
-      ) {
+      // if (red === 136 && green === 84 && blue === 208) {
+      //   currentColor = "purple";
+      // }
+      // if (currentColor === "red" && (green < 211 || blue > 42)) {
+      //   if (green < 211) {
+      //     green++;
+      //   } else if (blue > 42) {
+      //     blue--;
+      //   }
+      // } else if (
+      //   currentColor === "yellow" &&
+      //   (red > 5 || green > 196 || blue < 107)
+      // ) {
+      //   if (red > 5) {
+      //     red--;
+      //   } else if (green > 196) {
+      //     green--;
+      //   } else if (blue < 107) {
+      //     blue++;
+      //   }
+      // }
+      if (currentColor === "green" && (red > 0 || green < 216 || blue < 214)) {
         if (red > 0) {
           red--;
         } else if (green < 216) {
@@ -154,38 +137,26 @@ export default {
         }
       } else if (
         currentColor === "blue" &&
-        (red < 136 || green < 84 || blue < 208)
+        (red > 5 || green < 196 || blue > 107)
       ) {
-        if (red < 136) {
-          red++;
-        } else if (green < 84) {
+        if (red > 5) {
+          red--;
+        } else if (green < 196) {
           green++;
-        } else if (blue < 208) {
-          blue++;
-        }
-      } else if (
-        currentColor === "purple" &&
-        (red < 255 || green > 63 || blue > 52)
-      ) {
-        if (red < 255) {
-          red++;
-        } else if (green > 63) {
-          green--;
-        } else if (blue > 52) {
+        } else if (blue > 107) {
           blue--;
         }
       }
-
       color = "rgb(" + red + "," + green + "," + blue + ")";
       colorRGBA = "rgba(" + red + "," + green + "," + blue + ",0.6)";
       document.documentElement.style.setProperty("--primary", color);
       document.documentElement.style.setProperty("--primary-rgba", colorRGBA);
-    }, 500);
+    }, 1000);
   }
 };
 </script>
 
-<style lang="scss">
+  <style lang="scss">
 :root {
   --primary: red;
   --primary-rgba: rgba(255, 0, 0, 0.6);
@@ -215,6 +186,7 @@ export default {
 }
 body {
   overflow-x: hidden;
+  margin: 0;
 }
 @mixin bp-phone {
   @media only screen and (max-width: 599px) {

@@ -137,6 +137,7 @@
   &__text {
     // letter-spacing: 0.05rem;
     color: var(--grey-light);
+    font-weight: 700;
     @include uppercase;
     font-size: 3vh;
     margin-bottom: 5vh;

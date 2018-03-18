@@ -143,23 +143,23 @@
     @include grid-itm;
     &-1 {
       grid-area: 1/1/3/3;
-      //background-color: darken($color-primary, 6%);
+      background-color: var(--grey);
     }
     &-2 {
       grid-area: 1/3/2/6;
-      //background-color: darken($color-primary, 3%);
+      background-color: var(--grey);
     }
     &-3 {
       grid-area: 1/6/-1/-1;
-      //background-color: $color-primary;
+      background-color: var(--grey);
     }
     &-4 {
       grid-area: 3/1/-1/3;
-      //background-color: lighten($color-primary, 3%);
+      background-color: var(--grey);
     }
     &-5 {
       grid-area: 2/3/-1/6;
-      //background-color: lighten($color-primary, 6%);
+      background-color: var(--grey);
     }
   }
 }

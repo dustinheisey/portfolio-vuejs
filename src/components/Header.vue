@@ -236,7 +236,8 @@ export default {
     &--sub {
       // letter-spacing: 0.5rem;
       font-size: 5vmin;
-      color: var(--primary);
+      color: var(--grey-light);
+      font-weight: 900;
       //display: block;
       @include bp-phone {
         // letter-spacing: 0rem;
