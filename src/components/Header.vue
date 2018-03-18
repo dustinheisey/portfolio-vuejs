@@ -217,26 +217,29 @@ export default {
     width: 95%;
     background-color: var(--white);
     border: 2vh solid var(--primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     @include bp-phone {
       padding: 5vh;
       border-width: 1vh;
     }
     &--main {
-      letter-spacing: 1.5rem;
+      // letter-spacing: 1.5rem;
       font-size: 8vmin;
-      display: block;
+      // display: block;
       @include bp-phone {
-        letter-spacing: 0rem;
+        // letter-spacing: 0rem;
         font-size: 6vmin;
       }
     }
     &--sub {
-      letter-spacing: 0.5rem;
-      font-size: 4vmin;
+      // letter-spacing: 0.5rem;
+      font-size: 5vmin;
       color: var(--primary);
-      display: block;
+      //display: block;
       @include bp-phone {
-        letter-spacing: 0rem;
+        // letter-spacing: 0rem;
         font-size: 3vmin;
       }
     }
@@ -264,7 +267,7 @@ export default {
     }
   }
   &__link {
-    letter-spacing: 0.1rem;
+    // letter-spacing: 0.1rem;
     @include uppercase;
     color: var(--black);
     font-size: 6vh;
@@ -272,13 +275,13 @@ export default {
     margin-right: 7vh;
     transition: all 0.3s;
     @include bp-phone {
-      letter-spacing: 0rem;
+      // letter-spacing: 0rem;
       font-size: 1.5rem;
       margin-left: 2vw;
       margin-right: 2vw;
     }
     @include bp-tablet-p {
-      letter-spacing: 0rem;
+      // letter-spacing: 0rem;
       font-size: 3rem;
       margin-left: 4vw;
       margin-right: 4vw;

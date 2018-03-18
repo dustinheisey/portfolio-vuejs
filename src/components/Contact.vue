@@ -120,7 +120,7 @@
   &__heading {
     color: var(--black);
     font-size: 6vh;
-    letter-spacing: 0.1rem;
+    // letter-spacing: 0.1rem;
     font-weight: bolder;
     margin-top: 5vh;
     @include uppercase;
@@ -135,7 +135,7 @@
   }
 
   &__text {
-    letter-spacing: 0.05rem;
+    // letter-spacing: 0.05rem;
     color: var(--grey-light);
     @include uppercase;
     font-size: 3vh;
@@ -147,7 +147,7 @@
 
     @include bp-tablet-p {
       font-size: 2vh;
-      letter-spacing: 0.3rem;
+      // letter-spacing: 0.3rem;
     }
   }
 

@@ -3,9 +3,9 @@
       <div class="about__box">
           <div class="about__box--inner">
               <div class="about__text-box">
-                  <h2 class="about__heading">This is Me</h2>
-                  <p class="about__text">My name is Dustin Heisey. I'm a self-taught front-end web developer, artist, blogger, and entreprenuer.</p>
-                  <!-- <router-link class="about__btn" tag="button" to="/resume" style="color: var(--white)">Resume</router-link> -->
+                  <h2 class="about__heading">This is me</h2>
+                  <p class="about__text">My name is Dustin Heisey. I'm a Front End Web Developer, Artist, Blogger, and Entrepreneur.</p>
+                  <!-- <router-link class="about__btn" tag="button" to="/resume" style="color: var(--white)">Check out my Resume</router-link> -->
               </div>
           </div>
       </div>
@@ -112,68 +112,68 @@
   }
 
   &__heading {
-    letter-spacing: 1.5rem;
+    // letter-spacing: 1.5rem;
     @include unslant;
     @include uppercase;
     font-size: 13vmin;
     margin: 0;
     @include bp-phone {
       font-size: 8vmin;
-      letter-spacing: 0.5rem;
+      // letter-spacing: 0.5rem;
     }
     @include bp-tablet-p {
       font-size: 9vmin;
-      letter-spacing: 0.5rem;
+      // letter-spacing: 0.5rem;
     }
     @include bp-tablet-l {
       font-size: 11vmin;
-      letter-spacing: 0.5rem;
+      // letter-spacing: 0.5rem;
     }
   }
 
-  // &__btn {
-  //   @include unslant;
-  //   @include uppercase;
-  //   text-align: center;
-  //   letter-spacing: 1rem;
-  //   padding: 2vh 15vh;
-  //   border: none;
-  //   color: var(--white);
-  //   background-color: var(--black);
-  //   cursor: pointer;
-
-  //   &:focus {
-  //     outline: 0;
-  //   }
-
-  //   &:hover {
-  //     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);
-  //   }
-
-  //   & router-link {
-  //     display: block;
-  //     height: 100%;
-  //     width: 100%;
-  //   }
-  // }
-
-  &__text {
-    letter-spacing: 1rem;
+  &__btn {
     @include unslant;
     @include uppercase;
-    font-size: 4vmin;
+    text-align: center;
+    padding: 2vh 5vh;
+    font-size: 2vmin;
+    border: none;
+    color: var(--white);
+    background-color: var(--black);
+    cursor: pointer;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &:hover {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);
+    }
+
+    & router-link {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__text {
+    // letter-spacing: 1rem;
+    @include unslant;
+    @include uppercase;
+    font-size: 5vmin;
 
     @include bp-phone {
-      font-size: 3vmin;
-      letter-spacing: 0.5rem;
+      font-size: 4vmin;
+      // letter-spacing: 0.5rem;
     }
 
     @include bp-tablet-p {
-      letter-spacing: 0.5rem;
+      // letter-spacing: 0.5rem;
     }
 
     @include bp-tablet-l {
-      letter-spacing: 0.5rem;
+      // letter-spacing: 0.5rem;
     }
   }
 }
