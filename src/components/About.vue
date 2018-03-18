@@ -110,6 +110,7 @@
       border: 3vmin solid var(--color-primary);
       width: 90%;
       height: 90%;
+      max-width: 800px;
     }
   }
 
