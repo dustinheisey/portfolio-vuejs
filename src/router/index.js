@@ -14,7 +14,10 @@ export default new Router({
       path: "/",
       component: Home
     },
-    { path: "/index.html", redirect: "/" }
+    {
+      path: "www.dustinheisey.com/index.html",
+      redirect: "www.dustinheisey.com/"
+    }
     // {
     //   name: "Resume",
     //   path: "/resume",
