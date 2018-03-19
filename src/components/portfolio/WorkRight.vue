@@ -238,7 +238,7 @@ export default {
   grid-template-columns: 40% 60%;
   grid-template-areas: "text img";
   @include bp-phone {
-    height: 60vh;
+    height: 77vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -288,15 +288,6 @@ export default {
     @include unslant;
     transition: 1s all;
     grid-area: img;
-    @include bp-phone {
-      height: 40vmin;
-      width: 40vmin;
-    }
-
-    @include bp-tablet-p {
-      height: 30vmin;
-      width: 30vmin;
-    }
     &-box {
       @include center;
       &--outer {

@@ -107,12 +107,13 @@
     background-color: var(--white);
     @include bp-phone {
       padding: 0 3rem;
-      border: 3vmin solid var(--color-primary);
+      border-width: 3vmin;
       width: 90%;
       height: 90%;
     }
     @include bp-tablet-p {
       max-width: 800px;
+      border-width: 3vmin;
     }
 
     @include bp-tablet-l {

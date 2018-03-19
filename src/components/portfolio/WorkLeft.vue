@@ -216,7 +216,7 @@ export default {
   grid-template-columns: 60% 40%;
   grid-template-areas: "img text";
   @include bp-phone {
-    height: 60vh;
+    height: 77vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -276,20 +276,11 @@ export default {
     background-color: var(--white);
   }
   &__img {
-    height: 50vmin;
-    width: 50vmin;
+    height: 90%;
+    width: 90%;
     background-color: var(--white);
     @include unslant;
     grid-area: img;
-    @include bp-phone {
-      height: 40vmin;
-      width: 40vmin;
-    }
-
-    @include bp-tablet-p {
-      height: 30vmin;
-      width: 30vmin;
-    }
     &-box {
       @include center;
       &--outer {
@@ -328,6 +319,9 @@ export default {
         background-color: var(--white);
         @include bp-phone {
           border-width: 1rem;
+        }
+        @include bp-tablet-p {
+          border-width: 2rem;
         }
       }
     }

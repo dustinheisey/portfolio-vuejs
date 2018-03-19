@@ -113,7 +113,7 @@ export default {
   @include bp-phone {
     padding-top: 4rem;
     height: 70vh;
-    clip-path: polygon(0 0, 100% 0, 100% 87%, 0 95%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
     grid-template-rows: 1fr 0.3fr 2fr;
     grid-template-columns: 100%;
     grid-gap: 1vh;
@@ -124,7 +124,7 @@ export default {
   }
   @include bp-tablet-p {
     height: 130vh;
-    clip-path: polygon(0 0, 100% 0, 100% 87%, 0 97%);
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 0 95%);
     grid-template-rows: 1fr 0.3fr 2fr;
     grid-template-columns: 100%;
     grid-gap: 1vh;
@@ -176,7 +176,7 @@ export default {
   &__logo {
     height: 85%;
     width: 85%;
-    border: 1.5rem solid var(--primary);
+    border: 2vmin solid var(--primary);
   }
   &__heading-box {
     &--outer {
@@ -205,7 +205,7 @@ export default {
     &--inner {
       @include center;
       @include uppercase;
-      height: 85%;
+      height: 90%;
       width: 95%;
       background-color: var(--grey-light);
       @include bp-phone {
@@ -214,7 +214,7 @@ export default {
   }
   &__heading {
     @include center;
-    height: 85%;
+    height: 90%;
     width: 95%;
     background-color: var(--white);
     border: 3rem solid var(--primary);
@@ -227,6 +227,7 @@ export default {
     }
     @include bp-tablet-p {
       max-width: 800px;
+      border-width: 2vh;
     }
     &--main {
       // letter-spacing: 1.5rem;

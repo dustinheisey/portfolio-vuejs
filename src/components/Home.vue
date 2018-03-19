@@ -1,12 +1,12 @@
 <template>
   <div id="home">
     <app-header></app-header>
-    <div class="top"></div>
+    <!-- <div class="top"></div> -->
     <grid-1></grid-1>
     <about></about>
     <grid-5></grid-5>
     <portfolio></portfolio>
-    <div class="bottom"></div>
+    <!-- <div class="bottom"></div> -->
     <contact></contact>
     <app-footer></app-footer>
     <router-view></router-view>

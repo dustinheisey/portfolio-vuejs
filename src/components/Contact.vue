@@ -64,12 +64,12 @@
 
   @include bp-phone {
     height: 60vh;
-    margin-top: -4vh;
-    clip-path: polygon(0 10%, 100% 3%, 100% 120%, 0 100%);
+    margin-top: -9vmin;
+    clip-path: polygon(0 16%, 100% 3%, 100% 120%, 0 100%);
   }
 
   @include bp-tablet-p {
-    clip-path: polygon(0 18%, 100% 5%, 100% 120%, 0 100%);
+    clip-path: polygon(0 15%, 100% 6%, 100% 120%, 0 100%);
   }
 
   @include bp-tablet-l {
