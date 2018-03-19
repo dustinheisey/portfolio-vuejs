@@ -114,6 +114,10 @@
     @include bp-tablet-p {
       max-width: 800px;
     }
+
+    @include bp-tablet-l {
+      max-width: 800px;
+    }
   }
 
   &__heading {
