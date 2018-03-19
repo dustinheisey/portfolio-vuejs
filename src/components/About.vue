@@ -100,7 +100,7 @@
     text-align: center;
     align-content: center;
     flex-wrap: wrap;
-    border: 5vmin solid var(--primary);
+    border: 4vmin solid var(--primary);
     height: 90%;
     padding: 0 6rem;
     width: 95%;

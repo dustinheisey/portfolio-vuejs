@@ -43,6 +43,10 @@
   @include center;
   background-color: var(--primary);
   justify-content: space-between;
+  @include bp-phone {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 .footer__copywrite {
   font-size: 2.5vh;
@@ -57,7 +61,7 @@
   }
   @include bp-phone {
     margin: auto;
-    font-size: 2vh;
+    font-size: 4vmin;
   }
 }
 

@@ -238,7 +238,7 @@ export default {
   grid-template-columns: 40% 60%;
   grid-template-areas: "text img";
   @include bp-phone {
-    height: 77vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -331,7 +331,7 @@ export default {
         @include center;
         height: 90%;
         width: 90%;
-        border: 2rem solid var(--primary);
+        border: 3.25rem solid var(--primary);
         background-color: var(--white);
         transition: 1s all;
         @include bp-phone {

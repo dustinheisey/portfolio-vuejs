@@ -176,7 +176,7 @@ export default {
   &__logo {
     height: 85%;
     width: 85%;
-    border: 1rem solid var(--primary);
+    border: 1.5rem solid var(--primary);
   }
   &__heading-box {
     &--outer {
@@ -217,7 +217,7 @@ export default {
     height: 85%;
     width: 95%;
     background-color: var(--white);
-    border: 2vh solid var(--primary);
+    border: 3rem solid var(--primary);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;

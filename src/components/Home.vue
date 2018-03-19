@@ -1,13 +1,14 @@
 <template>
   <div id="home">
     <app-header></app-header>
+    <div class="top"></div>
     <grid-1></grid-1>
     <about></about>
     <grid-5></grid-5>
     <portfolio></portfolio>
+    <div class="bottom"></div>
     <contact></contact>
     <app-footer></app-footer>
-
     <router-view></router-view>
   </div>
 </template>
@@ -156,7 +157,7 @@ export default {
 };
 </script>
 
-  <style lang="scss">
+<style lang="scss">
 :root {
   --primary: red;
   --primary-rgba: rgba(255, 0, 0, 0.6);
@@ -187,6 +188,17 @@ export default {
 body {
   overflow-x: hidden;
   margin: 0;
+}
+@mixin slant {
+  transform: skewY(-8deg);
+}
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  align-content: center;
 }
 @mixin bp-phone {
   @media only screen and (max-width: 599px) {
@@ -235,5 +247,57 @@ html {
 }
 a {
   text-decoration: none;
+}
+.top {
+  height: 5vh;
+  width: 100%;
+  @include slant;
+  @include center;
+  background-color: var(--white);
+  margin-bottom: 9%;
+  margin-top: -11%;
+
+  @include bp-phone {
+    margin-bottom: 20%;
+    margin-top: -23%;
+  }
+  @include bp-tablet-p {
+    margin-bottom: 20%;
+    margin-top: -23%;
+  }
+  @include bp-tablet-l {
+    margin-bottom: 10%;
+    margin-top: -12%;
+  }
+  @include bp-desktop {
+    margin-bottom: 10%;
+    margin-top: -12%;
+  }
+}
+.bottom {
+  height: 5vh;
+  width: 100%;
+  @include slant;
+  @include center;
+  background-color: var(--white);
+  margin-bottom: -11%;
+  margin-top: 3vh;
+
+  @include bp-phone {
+    margin-bottom: -15%;
+    margin-top: 3vh;
+  }
+  @include bp-tablet-p {
+    margin-bottom: -17%;
+    margin-top: 4%;
+  }
+  @include bp-tablet-l {
+    margin-bottom: -12%;
+    margin-top: 3%;
+  }
+  @include bp-desktop {
+    margin-bottom: -12%;
+    margin-top: 3%;
+  }
 }
 </style>
