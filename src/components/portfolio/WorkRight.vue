@@ -282,31 +282,39 @@ export default {
     background-color: var(--white);
   }
   &__img {
-    height: 85%;
-    width: 85%;
+    height: 90%;
+    width: 90%;
     background-color: var(--white);
     @include unslant;
     transition: 1s all;
     grid-area: img;
+    @include bp-phone {
+      height: 40vmin;
+      width: 40vmin;
+    }
+
+    @include bp-tablet-p {
+      height: 30vmin;
+      width: 30vmin;
+    }
     &-box {
       @include center;
       &--outer {
         @include center;
-        height: 90vh;
-        width: 90vh;
+        height: 90vmin;
+        width: 90vmin;
         margin: 3rem;
         background-color: var(--black);
         box-shadow: 1px 1px 8px 0px rgba(50, 50, 50, 0.73);
         transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         @include bp-phone {
-          height: 45vh;
-          width: 45vh;
-          margin-bottom: 0;
+          margin-top: 3rem;
+          height: 70vmin;
+          width: 70vmin;
         }
-
         @include bp-tablet-p {
-          height: 55vh;
-          width: 55vh;
+          height: 55vmin;
+          width: 55vmin;
         }
         &:hover {
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
@@ -326,6 +334,9 @@ export default {
         border: 2rem solid var(--primary);
         background-color: var(--white);
         transition: 1s all;
+        @include bp-phone {
+          border-width: 1rem;
+        }
       }
     }
   }
