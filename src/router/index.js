@@ -13,15 +13,6 @@ export default new Router({
       name: "Home",
       path: "/",
       component: Home
-    },
-    {
-      path: "www.dustinheisey.com/index.html",
-      redirect: "www.dustinheisey.com/"
     }
-    // {
-    //   name: "Resume",
-    //   path: "/resume",
-    //   component: Resume
-    // }
   ]
 });

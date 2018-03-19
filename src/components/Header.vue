@@ -153,7 +153,7 @@ export default {
       box-shadow: 1px 1px 8px 0px rgba(50, 50, 50, 0.73);
       @include bp-phone {
         margin: 0;
-        margin-top: 2rem;
+        margin-top: 0;
         height: 20vh;
         width: 20vh;
       }

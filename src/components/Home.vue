@@ -230,6 +230,7 @@ body {
   font-family: "lato", sans-serif;
 }
 html {
+  font-size: 10px;
   line-height: 1.5;
 }
 a {
