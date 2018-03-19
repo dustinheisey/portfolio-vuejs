@@ -110,6 +110,8 @@
       border: 3vmin solid var(--color-primary);
       width: 90%;
       height: 90%;
+    }
+    @include bp-tablet-p {
       max-width: 800px;
     }
   }

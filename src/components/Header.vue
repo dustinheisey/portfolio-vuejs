@@ -163,6 +163,7 @@ export default {
         margin-bottom: 0;
         height: 25vh;
         width: 25vh;
+        max-width: 800px;
       }
     }
     &--inner {
@@ -224,6 +225,9 @@ export default {
       padding: 5vh;
       border-width: 1vh;
     }
+    @include bp-tablet-p {
+      max-width: 800px;
+    }
     &--main {
       // letter-spacing: 1.5rem;
       font-size: 8vmin;
@@ -262,6 +266,7 @@ export default {
     }
     @include bp-tablet-p {
       padding-left: 0;
+      max-width: 800px;
     }
     @include bp-tablet-l {
       padding-left: 0;
