@@ -226,12 +226,10 @@ body {
   background-attachment: fixed;
   background-size: cover;
   padding: 3vh;
-  width: 100%;
   max-width: 100%;
   font-family: "lato", sans-serif;
 }
 html {
-  font-size: 10px;
   line-height: 1.5;
 }
 a {

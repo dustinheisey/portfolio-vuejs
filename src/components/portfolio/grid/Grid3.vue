@@ -120,6 +120,7 @@
 
   @include bp-phone {
     height: 40vh;
+    grid-gap: 2vh;
   }
 }
 

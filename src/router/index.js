@@ -13,7 +13,8 @@ export default new Router({
       name: "Home",
       path: "/",
       component: Home
-    }
+    },
+    { path: "/index.html", redirect: "/" }
     // {
     //   name: "Resume",
     //   path: "/resume",
