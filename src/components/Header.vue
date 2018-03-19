@@ -98,7 +98,7 @@ export default {
   height: 150vh;
   width: 100%;
   background-color: var(--white);
-  clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   display: grid;
   grid-template-rows: 0.3fr repeat(6, 1fr);
   grid-template-columns: repeat(5, 1fr);
@@ -137,7 +137,7 @@ export default {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 98%);
   }
   @include bp-laptop {
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 98%);
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0 98%);
   }
   @include bp-desktop {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 98%);

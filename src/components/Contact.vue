@@ -77,7 +77,7 @@
   }
 
   @include bp-laptop {
-    clip-path: polygon(0 20%, 100% 3%, 100% 120%, 0 100%);
+    clip-path: polygon(5 20%, 100% 3%, 100% 120%, 0 100%);
   }
 
   @include bp-desktop {
