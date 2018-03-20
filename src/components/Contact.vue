@@ -94,6 +94,8 @@
 
     @include bp-phone {
       margin-top: 10vh;
+      height: 80%;
+      width: 95%;
     }
   }
 
@@ -102,6 +104,9 @@
     height: 85%;
     width: 94.5%;
     background-color: var(--grey-light);
+    @include bp-phone {
+      height: 90%;
+    }
   }
 
   &__box--text {
@@ -115,6 +120,7 @@
     border: 2rem solid var(--primary);
     @include bp-phone {
       border-width: 1vh;
+      height: 90%;
     }
   }
   &__heading {
@@ -126,7 +132,7 @@
     @include uppercase;
 
     @include bp-phone {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
 
     @include bp-tablet-p {
@@ -143,7 +149,8 @@
     margin-bottom: 5vh;
 
     @include bp-phone {
-      font-size: 1rem;
+      margin-top: -5%;
+      font-size: 1.6rem;
     }
 
     @include bp-tablet-p {

@@ -112,7 +112,7 @@ export default {
     ". . . . .";
   @include bp-phone {
     padding-top: 4rem;
-    height: 70vh;
+    height: 80vh;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
     grid-template-rows: 1fr 0.3fr 2fr;
     grid-template-columns: 100%;
@@ -188,7 +188,7 @@ export default {
       box-shadow: 1px 1px 8px 0px rgba(50, 50, 50, 0.73);
       @include bp-phone {
         margin: 0 auto;
-        height: 60%;
+        height: 70%;
         width: 90%;
       }
       @include bp-tablet-p {
@@ -235,7 +235,7 @@ export default {
       // display: block;
       @include bp-phone {
         // letter-spacing: 0rem;
-        font-size: 6vmin;
+        font-size: 2rem;
       }
     }
     &--sub {
@@ -246,7 +246,7 @@ export default {
       //display: block;
       @include bp-phone {
         // letter-spacing: 0rem;
-        font-size: 3vmin;
+        font-size: 1.6rem;
       }
     }
   }
@@ -283,7 +283,7 @@ export default {
     transition: all 0.3s;
     @include bp-phone {
       // letter-spacing: 0rem;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       margin-left: 2vw;
       margin-right: 2vw;
     }
