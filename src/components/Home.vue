@@ -159,7 +159,7 @@ export default {
 
 <style lang="scss">
 :root {
-  --primary: red;
+  --primary: transparent;
   --primary-rgba: rgba(255, 0, 0, 0.6);
   --pink-light: #ef5777;
   --pink: #f53b57;
