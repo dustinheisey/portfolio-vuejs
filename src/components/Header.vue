@@ -31,7 +31,7 @@ export default {
     return {
       msgs: [
         "I create websites and apps",
-        "I build aesthetic interfaces",
+        "I build aesthetic user interfaces",
         "I make the most OCD form of art",
         "I drink more coffee than I should"
       ],
