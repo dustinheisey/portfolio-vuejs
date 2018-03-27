@@ -1,6 +1,6 @@
 <template>
   <div id="works">
-    <work v-for="work in works" :key="work.id" :heading="work.heading" :subheading="work.subheading" :grid="work.grid" :direction="work.id + 1" :link="work.link" :src="work.src"></work>
+    <work v-for="work in works" :key="work.id" :heading="work.heading" :subheading="work.subheading" :grid="work.grid" :direction="work.direction" :link="work.link" :src="work.src"></work>
   </div>
 </template>
 
@@ -14,14 +14,14 @@ export default {
   data() {
     return {
       works: [
-        // {
-        //   heading: "Razorblade Art",
-        //   subheading: ["html", "css", "bootstrap"],
-        //   grid: 2,
-        //   direction: 0,
-        //   link: "http://razorbladeart.com",
-        //   src: path + "razorblade-art.jpg"
-        // },
+        {
+          heading: "Razorblade Art",
+          subheading: ["html", "css", "bootstrap"],
+          grid: 2,
+          direction: 0,
+          link: "http://razorbladeart.com",
+          src: path + "razorblade-art.jpg"
+        },
         {
           heading: "Snake",
           subheading: ["html", "css", "js"],
