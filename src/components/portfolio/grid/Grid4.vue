@@ -164,4 +164,7 @@
     }
   }
 }
+div {
+  border-radius: 25px;
+}
 </style>

@@ -31,7 +31,7 @@ export default {
     return {
       msgs: [
         "I create websites and apps",
-        "I blog about self improvement",
+        "I build aesthetic interfaces",
         "I make the most OCD form of art",
         "I drink more coffee than I should"
       ],
@@ -112,7 +112,8 @@ export default {
     ". . . . .";
   @include bp-phone {
     padding-top: 4rem;
-    height: 80vh;
+    height: 90vh;
+    padding: 1vh;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
     grid-template-rows: 1fr 0.3fr 2fr;
     grid-template-columns: 100%;
@@ -232,16 +233,17 @@ export default {
     &--main {
       // letter-spacing: 1.5rem;
       font-size: 8vmin;
+      color: var(--heading);
       // display: block;
       @include bp-phone {
         // letter-spacing: 0rem;
-        font-size: 2rem;
+        font-size: 2.1rem;
       }
     }
     &--sub {
       // letter-spacing: 0.5rem;
-      font-size: 5vmin;
-      color: var(--grey-light);
+      font-size: 4vmin;
+      color: var(--text);
       font-weight: 900;
       //display: block;
       @include bp-phone {
@@ -276,7 +278,7 @@ export default {
   &__link {
     // letter-spacing: 0.1rem;
     @include uppercase;
-    color: var(--black);
+    color: var(--text);
     font-size: 6vh;
     margin-left: 7vh;
     margin-right: 7vh;
@@ -297,5 +299,13 @@ export default {
       color: var(--primary);
     }
   }
+}
+
+div,
+img,
+header,
+h1,
+span {
+  border-radius: 10px;
 }
 </style>

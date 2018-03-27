@@ -103,4 +103,8 @@
     fill: currentColor;
   }
 }
+
+footer {
+  border-radius: 0 0 25px 25px;
+}
 </style>

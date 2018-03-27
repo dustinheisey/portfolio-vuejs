@@ -328,6 +328,9 @@ export default {
         @include bp-phone {
           border-width: 1rem;
         }
+        @include bp-tablet-p {
+          border-width: 2rem;
+        }
       }
     }
   }
@@ -347,7 +350,7 @@ export default {
       margin-bottom: 1rem;
       letter-spacing: 0.3rem;
       & a {
-        color: var(--black);
+        color: var(--heading);
         transition: 0.5s all;
         &:hover {
           color: var(--primary);
@@ -370,5 +373,11 @@ export default {
   @include bp-tablet-p {
     font-size: 6vmin;
   }
+}
+
+div,
+section,
+a {
+  border-radius: 25px;
 }
 </style>

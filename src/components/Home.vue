@@ -183,6 +183,8 @@ export default {
   --grey-dark: #485460;
   --off-black: #1e272e;
   --black: #232323;
+  --heading: #636e72;
+  --text: #2d3436;
   color: var(--black);
 }
 body {

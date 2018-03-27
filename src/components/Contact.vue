@@ -63,13 +63,15 @@
   margin-top: -12vh;
 
   @include bp-phone {
-    height: 60vh;
+    height: 80vh;
     margin-top: -9vmin;
     clip-path: polygon(0 16%, 100% 3%, 100% 120%, 0 100%);
   }
 
   @include bp-tablet-p {
-    clip-path: polygon(0 15%, 100% 6%, 100% 120%, 0 100%);
+    clip-path: polygon(0 18%, 100% 6%, 100% 120%, 0 100%);
+    height: 80vh;
+    margin-top: -13vmin;
   }
 
   @include bp-tablet-l {
@@ -87,21 +89,24 @@
   &__box--outer {
     @include center;
     margin-top: 28vh;
-    height: 60%;
-    width: 90%;
+    height: 65%;
+    width: 80%;
     background-color: var(--black);
     box-shadow: 1px 1px 8px 0px rgba(50, 50, 50, 0.73);
 
     @include bp-phone {
       margin-top: 10vh;
-      height: 80%;
+      height: 65%;
       width: 95%;
+    }
+    @include bp-tablet-p {
+      margin-top: 10vh;
     }
   }
 
   &__box--inner {
     @include center;
-    height: 85%;
+    height: 94.5%;
     width: 94.5%;
     background-color: var(--grey-light);
     @include bp-phone {
@@ -113,7 +118,7 @@
     @include center;
     flex-wrap: wrap;
     align-content: center;
-    height: 85%;
+    height: 94.5%;
     width: 94.5%;
     padding: 5%;
     background-color: var(--white);
@@ -124,7 +129,7 @@
     }
   }
   &__heading {
-    color: var(--black);
+    color: var(--heading);
     font-size: 6vh;
     // letter-spacing: 0.1rem;
     font-weight: bolder;
@@ -142,7 +147,7 @@
 
   &__text {
     // letter-spacing: 0.05rem;
-    color: var(--grey-light);
+    color: var(--text);
     font-weight: 700;
     @include uppercase;
     font-size: 3vh;
@@ -167,5 +172,9 @@
       color: var(--black);
     }
   }
+}
+
+div {
+  border-radius: 25px;
 }
 </style>

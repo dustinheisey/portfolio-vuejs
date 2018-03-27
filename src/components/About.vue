@@ -4,7 +4,7 @@
           <div class="about__box--inner">
               <div class="about__text-box">
                   <h2 class="about__heading">This is me</h2>
-                  <p class="about__text">My name is Dustin Heisey. I'm a Front End Web Developer, Artist, Blogger, and Entrepreneur.</p>
+                  <p class="about__text">My name is Dustin Heisey, and I'm an aspiring Front End Web Developer. I spend my days learning the newest trends in web development. I have an eye for aesthetics, and a unquenchable thirst for improvement. Take a look at some of my projects below!</p>
                   <!-- <router-link class="about__btn" tag="button" to="/resume" style="color: var(--white)">Check out my Resume</router-link> -->
               </div>
           </div>
@@ -69,7 +69,7 @@
   background-color: var(--white);
 
   @include bp-phone {
-    height: 80vh;
+    height: 115vh;
   }
 
   &__box {
@@ -83,14 +83,24 @@
       width: 90%;
     }
 
+    @include bp-tablet-p {
+      width: 90%;
+      height: 80%;
+    }
+
     &--inner {
       @include center;
-      height: 90%;
+      height: 95%;
       width: 95%;
       background-color: var(--grey-light);
 
       @include bp-phone {
         width: 90%;
+      }
+
+      @include bp-tablet-p {
+        width: 90%;
+        height: 90%;
       }
     }
   }
@@ -109,11 +119,13 @@
       padding: 0 3rem;
       border-width: 3vmin;
       width: 90%;
-      height: 90%;
+      height: 95%;
     }
     @include bp-tablet-p {
       max-width: 800px;
       border-width: 3vmin;
+      height: 90%;
+      width: 90%;
     }
 
     @include bp-tablet-l {
@@ -125,7 +137,8 @@
     // letter-spacing: 1.5rem;
     @include unslant;
     @include uppercase;
-    font-size: 13vmin;
+    font-size: 10vmin;
+    color: var(--heading);
     margin: 0;
     @include bp-phone {
       font-size: 8vmin;
@@ -147,17 +160,15 @@
     text-align: center;
     padding: 2vh 5vh;
     font-size: 2vmin;
-    border: none;
+    border-radius: 10px;
     color: var(--white);
-    background-color: var(--black);
+    background-color: var(--heading);
     cursor: pointer;
-
-    &:focus {
-      outline: 0;
-    }
+    transition: 0.5s all;
 
     &:hover {
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);
+      background-color: var(--text);
     }
 
     & router-link {
@@ -168,12 +179,13 @@
   }
 
   &__text {
-    color: var(--grey);
+    color: var(--text);
     // letter-spacing: 1rem;
     font-weight: 500;
     @include unslant;
+    text-align: center;
     @include uppercase;
-    font-size: 5vmin;
+    font-size: 4vmin;
 
     @include bp-phone {
       font-size: 4vmin;
@@ -181,6 +193,7 @@
     }
 
     @include bp-tablet-p {
+      font-size: 3vmin;
       // letter-spacing: 0.5rem;
     }
 
@@ -188,5 +201,9 @@
       // letter-spacing: 0.5rem;
     }
   }
+}
+section,
+div {
+  border-radius: 25px;
 }
 </style>
