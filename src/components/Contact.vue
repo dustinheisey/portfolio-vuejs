@@ -3,7 +3,7 @@
       <div class="contact__box--outer">
           <div class="contact__box--inner">
               <div class="contact__box--text">
-                  <h2 class="contact__heading">Interested in working with me?</h2>
+                  <h2 class="contact__heading">Interested in Working With Me?</h2>
                   <p class="contact__text">Message me at <a href="mailto:hello@dustinheisey.com" class="contact__link">hello@dustinheisey.com</a>, and let's get started!</p>
               </div>
           </div>
@@ -51,9 +51,9 @@
   align-content: center;
 }
 
-@mixin uppercase {
-  text-transform: uppercase;
-}
+// @mixin uppercase {
+//   text-transform: uppercase;
+// }
 .contact {
   height: 110vh;
   width: 100%;
@@ -130,11 +130,11 @@
   }
   &__heading {
     color: var(--heading);
-    font-size: 6vh;
+    font-size: 6.5vh;
     // letter-spacing: 0.1rem;
     font-weight: bolder;
     margin-top: 5vh;
-    @include uppercase;
+    //@include uppercase;
 
     @include bp-phone {
       font-size: 2rem;
@@ -149,8 +149,8 @@
     // letter-spacing: 0.05rem;
     color: var(--text);
     font-weight: 700;
-    @include uppercase;
-    font-size: 3vh;
+    //@include uppercase;
+    font-size: 4.5vh;
     margin-bottom: 5vh;
 
     @include bp-phone {

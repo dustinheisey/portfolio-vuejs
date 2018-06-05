@@ -30,12 +30,12 @@ export default {
   data() {
     return {
       msgs: [
-        "I create many websites and apps",
-        "I build aesthetic user interfaces",
-        "I make the most OCD form of art",
-        "I drink more coffee than I should"
+        "I Create Many Websites and Apps",
+        "I Build Aesthetic User Interfaces",
+        "I Make the Most OCD Form of Art",
+        "I Drink More Coffee Than I Should"
       ],
-      msg: "I create websites and apps",
+      msg: "I Create Many Websites and Apps",
       index: 0,
       scroll: false
     };
@@ -91,9 +91,9 @@ export default {
 @mixin center-h {
   text-align: center;
 }
-@mixin uppercase {
-  text-transform: uppercase;
-}
+// @mixin uppercase {
+//   text-transform: uppercase;
+// }
 .header {
   height: 150vh;
   width: 100%;
@@ -205,7 +205,7 @@ export default {
     }
     &--inner {
       @include center;
-      @include uppercase;
+      //@include uppercase;
       height: 90%;
       width: 95%;
       background-color: var(--grey-light);
@@ -232,23 +232,29 @@ export default {
     }
     &--main {
       // letter-spacing: 1.5rem;
-      font-size: 8vmin;
+      font-size: 11vmin;
       color: var(--heading);
       // display: block;
       @include bp-phone {
         // letter-spacing: 0rem;
         font-size: 2.1rem;
       }
+      @include bp-tablet-p {
+        font-size: 8vmin;
+      }
     }
     &--sub {
       // letter-spacing: 0.5rem;
-      font-size: 4vmin;
+      font-size: 5vmin;
       color: var(--text);
       font-weight: 900;
       //display: block;
       @include bp-phone {
         // letter-spacing: 0rem;
         font-size: 1.6rem;
+      }
+      @include bp-tablet-p {
+        font-size: 4vmin;
       }
     }
   }
@@ -277,7 +283,7 @@ export default {
   }
   &__link {
     // letter-spacing: 0.1rem;
-    @include uppercase;
+    //@include uppercase;
     color: var(--text);
     font-size: 6vh;
     margin-left: 7vh;

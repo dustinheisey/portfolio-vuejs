@@ -14,34 +14,34 @@ export default {
   data() {
     return {
       works: [
-        {
-          heading: "Razorblade Art",
-          subheading: ["html", "css", "bootstrap"],
-          grid: 2,
-          direction: 0,
-          link: "http://razorbladeart.com",
-          src: path + "razorblade-art.jpg"
-        },
+        // {
+        //   heading: "Razorblade Art",
+        //   subheading: ["html", "css", "bootstrap"],
+        //   grid: 2,
+        //   direction: 0,
+        //   link: "http://razorbladeart.com",
+        //   src: path + "razorblade-art.jpg"
+        // },
         {
           heading: "Snake",
           subheading: ["html", "css", "js"],
-          grid: 3,
-          direction: 1,
+          grid: 2,
+          direction: 0,
           link: "https://snake.dustinheisey.com",
           src: path + "snake.jpg"
         },
-        {
-          heading: "Improvement Bay",
-          subheading: ["css", "wordpress", "google"],
-          grid: 4,
-          direction: 0,
-          link: "http://improvementbay.com",
-          src: path + "improvement-bay.jpg"
-        },
+        // {
+        //   heading: "Improvement Bay",
+        //   subheading: ["css", "wordpress", "google"],
+        //   grid: 4,
+        //   direction: 0,
+        //   link: "http://improvementbay.com",
+        //   src: path + "improvement-bay.jpg"
+        // },
         {
           heading: "Circles",
           subheading: ["html", "css", "sass", "js"],
-          grid: 5,
+          grid: 3,
           direction: 1,
           link: "https://circles.dustinheisey.com",
           src: path + "circles.jpg"
@@ -53,14 +53,22 @@ export default {
             "css",
             "sass",
             "js",
-            "vuejs",
-            "webpack",
-            "babel"
+            "vuejs"
+            // "webpack",
+            // "babel"
           ],
-          grid: 6,
+          grid: 4,
           direction: 0,
           link: "https://geomancy.dustinheisey.com",
           src: path + "geomancy.jpg"
+        },
+        {
+          heading: "Aerials Gymnastics",
+          subheading: ["html", "css", "php", "wordpress"],
+          grid: 6,
+          direction: 1,
+          link: "http://aerialsgymnastics.net",
+          src: path + "aerials.jpg"
         }
       ]
     };

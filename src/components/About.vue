@@ -3,7 +3,7 @@
       <div class="about__box">
           <div class="about__box--inner">
               <div class="about__text-box">
-                  <h2 class="about__heading">This is me</h2>
+                  <h2 class="about__heading">About Me</h2>
                   <p class="about__text">My name is Dustin Heisey, and I'm an aspiring Front End Web Developer. I spend my days learning the newest trends in web development. I have an eye for aesthetics, and a unquenchable thirst for improvement. Take a look at some of my projects below!</p>
                   <!-- <router-link class="about__btn" tag="button" to="/resume" style="color: var(--white)">Check out my Resume</router-link> -->
               </div>
@@ -42,9 +42,9 @@
     @content;
   }
 }
-@mixin uppercase {
-  text-transform: uppercase;
-}
+// @mixin uppercase {
+//   text-transform: uppercase;
+// }
 @mixin slant {
   transform: skewY(-8deg);
 }
@@ -136,27 +136,27 @@
   &__heading {
     // letter-spacing: 1.5rem;
     @include unslant;
-    @include uppercase;
-    font-size: 10vmin;
+    //@include uppercase;
+    font-size: 14vmin;
     color: var(--heading);
     margin: 0;
     @include bp-phone {
-      font-size: 8vmin;
-      // letter-spacing: 0.5rem;
-    }
-    @include bp-tablet-p {
       font-size: 9vmin;
       // letter-spacing: 0.5rem;
     }
+    @include bp-tablet-p {
+      font-size: 10vmin;
+      // letter-spacing: 0.5rem;
+    }
     @include bp-tablet-l {
-      font-size: 11vmin;
+      font-size: 12vmin;
       // letter-spacing: 0.5rem;
     }
   }
 
   &__btn {
     @include unslant;
-    @include uppercase;
+    //@include uppercase;
     text-align: center;
     padding: 2vh 5vh;
     font-size: 2vmin;
@@ -184,8 +184,8 @@
     font-weight: 500;
     @include unslant;
     text-align: center;
-    @include uppercase;
-    font-size: 4vmin;
+    //@include uppercase;
+    font-size: 4.5vmin;
 
     @include bp-phone {
       font-size: 4vmin;
