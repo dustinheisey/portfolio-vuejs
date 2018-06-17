@@ -14,61 +14,45 @@ export default {
   data() {
     return {
       works: [
-        // {
-        //   heading: "Razorblade Art",
-        //   subheading: ["html", "css", "bootstrap"],
-        //   grid: 2,
-        //   direction: 0,
-        //   link: "http://razorbladeart.com",
-        //   src: path + "razorblade-art.jpg"
-        // },
         {
-          heading: "Snake",
-          subheading: ["html", "css", "js"],
+          heading: "MY Team Gear",
+          subheading: ["html", "css", "sass", "php", "wordpress"],
           grid: 2,
           direction: 0,
-          link: "https://snake.dustinheisey.com",
-          src: path + "snake.jpg"
+          link: "http://my-teamgear.com",
+          src: path + "my-teamgear.jpg"
         },
-        // {
-        //   heading: "Improvement Bay",
-        //   subheading: ["css", "wordpress", "google"],
-        //   grid: 4,
-        //   direction: 0,
-        //   link: "http://improvementbay.com",
-        //   src: path + "improvement-bay.jpg"
-        // },
         {
-          heading: "Circles",
-          subheading: ["html", "css", "sass", "js"],
+          heading: "Aerials Gymnastics",
+          subheading: ["html", "css", "php", "wordpress"],
           grid: 3,
           direction: 1,
-          link: "https://circles.dustinheisey.com",
-          src: path + "circles.jpg"
+          link: "http://aerialsgymnastics.net",
+          src: path + "aerials.jpg"
         },
         {
           heading: "Geomancy",
-          subheading: [
-            "html",
-            "css",
-            "sass",
-            "js",
-            "vuejs"
-            // "webpack",
-            // "babel"
-          ],
+          subheading: ["html", "css", "sass", "js", "vuejs"],
           grid: 4,
           direction: 0,
           link: "https://geomancy.dustinheisey.com",
           src: path + "geomancy.jpg"
         },
         {
-          heading: "Aerials Gymnastics",
-          subheading: ["html", "css", "php", "wordpress"],
-          grid: 6,
+          heading: "Circles",
+          subheading: ["html", "css", "sass", "js"],
+          grid: 5,
           direction: 1,
-          link: "http://aerialsgymnastics.net",
-          src: path + "aerials.jpg"
+          link: "https://circles.dustinheisey.com",
+          src: path + "circles.jpg"
+        },
+        {
+          heading: "Snake",
+          subheading: ["html", "css", "js"],
+          grid: 6,
+          direction: 0,
+          link: "https://snake.dustinheisey.com",
+          src: path + "snake.jpg"
         }
       ]
     };

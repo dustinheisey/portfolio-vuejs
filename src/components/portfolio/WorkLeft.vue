@@ -284,8 +284,7 @@ export default {
     background-color: var(--white);
   }
   &__img {
-    height: 90%;
-    width: 90%;
+    width: 85%;
     background-color: var(--white);
     @include unslant;
     grid-area: img;
